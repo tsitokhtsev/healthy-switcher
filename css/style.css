@@ -3,8 +3,225 @@
           box-sizing: border-box;
 }
 
-.container {
+.body {
   max-width: 1110px;
   margin: auto;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Light";
+  src: url("../fonts/HelveticaNeueCyr-Light.woff");
+  src: url("../fonts/HelveticaNeueCyr-Light.woff#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Roman";
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot");
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Medium";
+  src: url("../fonts/HelveticaNeueCyr-Medium.eot");
+  src: url("../fonts/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Bold";
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr CondensedBlack";
+  src: url("../fonts/HelveticaNeueCyr-CondensedBlack.eot");
+  src: url("../fonts/HelveticaNeueCyr-CondensedBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-CondensedBlack.woff") format("woff"), url("../fonts/HelveticaNeueCyr-CondensedBlack.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Helvetica Neue Cyr Roman", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  background: url(../img/background.png) no-repeat, #1a1a1a;
+  border-radius: 6px;
+}
+
+article {
+  position: relative;
+  padding-top: 10px;
+}
+
+body h1 {
+  margin-bottom: 0;
+  font-family: "Helvetica Neue Cyr CondensedBlack", sans-serif;
+  font-size: 100px;
+  line-height: 150px;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+body h2 {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  font-family: "Helvetica Neue Cyr Light", sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: 0.3em;
+}
+
+.navbar {
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(37, 37, 37, 0.8);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+.navbar-container {
+  max-width: 1110px;
+  min-height: 80px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.navbar-logo {
+  height: 24px;
+}
+
+.nav {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-menu {
+  font-family: "Helvetica Neue Cyr Bold", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero {
+  max-width: 1110px;
+  margin: 160px auto;
+  font-family: "Helvetica Neue Cyr Light", sans-serif;
+  text-align: center;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 72px;
+  line-height: 87px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+
+.hero-description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero-info-main {
+  margin-bottom: 0;
+  width: 200px;
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.hero-info-description {
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.order-now {
+  margin: 40px auto 70px auto;
+  padding: 25px 50px 20px 50px;
+  font-family: "Helvetica Neue Cyr Bold", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  color: #1a1a1a;
+  background-color: #34c759;
+  border: none;
+  border-radius: 43px;
+}
+
+.hero img {
+  width: 18px;
+}
+
+.about {
+  padding-bottom: 90px;
+  border-radius: 6px;
+  background-color: #252525;
+}
+
+.about-text {
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.scroller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 980px;
+  margin: auto;
+}
+
+.scroller-btn-right, .scroller-btn-left {
+  border: none;
+  background-color: #252525;
+}
+
+.scroller-image {
+  margin: 0 15px;
 }
 /*# sourceMappingURL=style.css.map */
