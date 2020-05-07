@@ -1,0 +1,29 @@
+.navbar
+    z-index: 99
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    border-bottom: 2px solid rgba($secondary, 0.1)
+    background-color: rgba($dark-gray ,0.8)
+    backdrop-filter: blur(8px)
+    &-container
+        max-width: 1110px
+        min-height: 80px
+        margin: auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        overflow: hidden
+    &-logo
+        height: 24px
+
+.nav
+    width: 300px
+    display: flex
+    justify-content: space-between
+    &-menu
+        +bold
+        font-size: 14px
+        color: $secondary
+        text-decoration: none
