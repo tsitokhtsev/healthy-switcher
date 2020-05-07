@@ -4,19 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healty Switcher</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="navbar">
-            <div class="logo"></div>
-            <div class="nav"></div>
+        <div class="navbar-container">
+          <a href="#"
+            ><img class="navbar-logo" src="/img/logo.svg" alt="logo"
+          /></a>
+          <div class="nav">
+            <a href="" class="nav-menu">Menu</a>
+            <a href="" class="nav-menu">Recipes</a>
+            <a href="" class="nav-menu">Chefs</a>
+            <a href="" class="nav-menu">Contacts</a>
+          </div>
+          <!-- /.nav -->
+        </div>
+        <!-- /.navbar-container -->
       </div>
       <!-- /.navbar -->
-      <div class="hero"></div>
+      <div class="hero">
+        <p class="hero-title">
+          Your <b>favourite food</b> delivered <b>hot & fresh</b>
+        </p>
+        <p class="hero-description">
+          HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping &
+          marinating, so<br />can cook a fresh homemade dinner in just 15
+          minutes.
+        </p>
+        <a href="#"><button class="order-now">Order Now</button></a>
+        <div class="hero-info">
+          <div class="hero-info-time">
+            <img src="/img/hero/time.png" />
+            <p class="hero-info-main">Today 10:00 am - 7:00 pm</p>
+            <div class="p hero-info-description">Working Hours</div>
+          </div>
+          <div class="hero-info-address">
+            <img src="/img/hero/address.png" />
+            <p class="hero-info-main">Velyka Vasylkivska 100</p>
+            <div class="p hero-info-description">Get Directions</div>
+          </div>
+          <div class="hero-info-phone">
+            <img src="/img/hero/phone.png" />
+            <p class="hero-info-main">+38 (063)833 24 15</p>
+            <div class="p hero-info-description">Call Online</div>
+          </div>
+        </div>
+        <!-- /.hero-info -->
+      </div>
       <!-- /.hero -->
     </header>
     <!-- /.header -->
+    <div class="body">
+      <article class="about">
+        <h1>ABOUT</h1>
+        <h2>The Basics Of Healthy Food</h2>
+        <p class="about-text">
+          In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea
+          aliquip aliquip consectetur<br />voluptate est. Eu minim dolore
+          laboris enim mollit voluptate irure esse aliquip.
+        </p>
+        <div class="scroller">
+          <button class="scroller-btn-left">
+            <img src="/img/about/btn-left.png" alt="left" />
+          </button>
+          <div class="scroller-images">
+            <img class="scroller-image" src="/img/about/food1.png" alt="food1" />
+            <img class="scroller-image" src="/img/about/food2.png" alt="food2" />
+          </div>
+          <button class="scroller-btn-right">
+            <img src="/img/about/btn-right.png" alt="right" />
+          </button>
+        </div>
+      </article>
+      <!-- /.about -->
+    </div>
+    <!-- /.body -->
   </body>
 </html>
