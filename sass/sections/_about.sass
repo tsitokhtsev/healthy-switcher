@@ -1,20 +1,30 @@
 .about
-    padding-bottom: 90px
+    padding-bottom: 80px
     border-radius: 6px
     background-color: $dark-gray
     &-text
-        margin-bottom: 60px
+        margin: 60px auto
         font-size: 16px
         line-height: 30px
-        color: rgba($secondary, 0.5)
-
-.scroller
-    display: flex
-    justify-content: space-between
-    width: 980px
-    margin: auto
-    &-btn-right, &-btn-left
-        border: none
-        background-color: $dark-gray
-    &-image
-        margin: 0 15px
+        color: rgba($secondary, 0.7)
+    &-scroller
+        display: flex
+        justify-content: space-between
+        margin: auto
+        width: 980px
+        &-btn-right, &-btn-left
+            border: none
+            background-color: $dark-gray
+        &-btn-right
+            transform: scale(-1, 1)
+        &-btn-right img, &-btn-left img
+            padding: 22px
+            border: 2px solid $gray
+            border-radius: 99px
+        &-btn-right img:hover, &-btn-left img:hover
+            color: $black
+            background-color: $primary
+            border-color: $primary
+            transition: 300ms
+        &-image
+            margin: 0 15px
