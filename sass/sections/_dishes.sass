@@ -1,0 +1,70 @@
+.dishes-cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin: 60px auto 0 auto
+
+.dishes-card
+    margin-bottom: 30px
+    width: 350px
+    border-radius: 6px
+    background-color: $dark-gray
+    text-align: left
+    &-top
+        position: relative
+    &-share
+        z-index: 98
+        position: absolute
+        top: 24px
+        right: 24px
+        padding: 8px
+        border-radius: 99px
+        background-color: rgba(#000, 0.5)
+    &-title
+        padding: 30px 30px 0 30px
+        +medium
+        font-size: 32px
+        line-height: 30px
+    &-subtitle
+        padding: 0 30px
+        font-size: 12px
+        line-height: 16px
+        letter-spacing: -0.15px
+        color: rgba($secondary, 0.7)
+    &-description
+        padding: 20px 30px 25px 30px
+        font-size: 13px
+        line-height: 18px
+        letter-spacing: -0.1625px
+        color: rgba($secondary, 0.5)
+    &-bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 30px 30px 30px
+        &-rating
+            display: flex
+            align-items: center
+            &-star
+                margin-bottom: 5px
+            &-counter
+                padding: 0 15px
+                +black
+                font-size: 12px
+                line-height: 30px
+                letter-spacing: 1.5px
+        &-order
+            padding: 0 28px 0 30px
+            border: 2px solid $gray
+            border-radius: 30px
+            +black
+            font-size: 10px
+            line-height: 40px
+            letter-spacing: 0.2em
+            color: rgba($secondary, 0.5)
+            background-color: $dark-gray
+        &-order:hover
+            border-color: $primary
+            color: $black
+            background-color: $primary
+            transition: 300ms
