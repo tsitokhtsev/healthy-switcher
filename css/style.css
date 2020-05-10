@@ -80,6 +80,14 @@ body h2 {
   letter-spacing: 0.3em;
 }
 
+hr {
+  margin: 0 auto;
+  width: 60px;
+  height: 2px;
+  border: none;
+  background-color: #34c759;
+}
+
 .navbar {
   z-index: 99;
   position: fixed;
@@ -193,35 +201,221 @@ body h2 {
 }
 
 .about {
-  padding-bottom: 90px;
+  padding-bottom: 80px;
   border-radius: 6px;
   background-color: #252525;
 }
 
 .about-text {
-  margin-bottom: 60px;
+  margin: 60px auto;
   font-size: 16px;
   line-height: 30px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.scroller {
+.about-scroller {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 980px;
   margin: auto;
+  width: 980px;
 }
 
-.scroller-btn-right, .scroller-btn-left {
+.about-scroller-btn-right, .about-scroller-btn-left {
   border: none;
   background-color: #252525;
 }
 
-.scroller-image {
+.about-scroller-btn-right {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.about-scroller-btn-right img, .about-scroller-btn-left img {
+  padding: 22px;
+  border: 2px solid #303030;
+  border-radius: 99px;
+}
+
+.about-scroller-btn-right img:hover, .about-scroller-btn-left img:hover {
+  color: #1a1a1a;
+  background-color: #34c759;
+  border-color: #34c759;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.about-scroller-image {
   margin: 0 15px;
+}
+
+.work-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px auto 30px auto;
+}
+
+.work-card {
+  padding: 25px;
+  width: 255px;
+  height: 200px;
+  border-radius: 6px;
+  text-align: left;
+  background-color: #252525;
+}
+
+.work-card-title {
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.275px;
+}
+
+.work-card-description {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.1625px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.work-card:hover {
+  background-color: #34c759;
+  color: #1a1a1a;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.work-card:hover .work-card-description {
+  color: #1a1a1a;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.work-card hr {
+  margin: 10px 0 25px 0;
+}
+
+.work-card:hover hr {
+  background-color: #1a1a1a;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.dishes-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px auto 0 auto;
+}
+
+.dishes-card {
+  margin-bottom: 30px;
+  width: 350px;
+  border-radius: 6px;
+  background-color: #252525;
+  text-align: left;
+}
+
+.dishes-card-top {
+  position: relative;
+}
+
+.dishes-card-share {
+  z-index: 98;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 8px;
+  border-radius: 99px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dishes-card-title {
+  padding: 30px 30px 0 30px;
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  font-size: 32px;
+  line-height: 30px;
+}
+
+.dishes-card-subtitle {
+  padding: 0 30px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dishes-card-description {
+  padding: 20px 30px 25px 30px;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1625px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dishes-card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px 30px 30px;
+}
+
+.dishes-card-bottom-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dishes-card-bottom-rating-star {
+  margin-bottom: 5px;
+}
+
+.dishes-card-bottom-rating-counter {
+  padding: 0 15px;
+  font-family: "Helvetica Neue Cyr CondensedBlack", sans-serif;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+.dishes-card-bottom-order {
+  padding: 0 28px 0 30px;
+  border: 2px solid #303030;
+  border-radius: 30px;
+  font-family: "Helvetica Neue Cyr CondensedBlack", sans-serif;
+  font-size: 10px;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #252525;
+}
+
+.dishes-card-bottom-order:hover {
+  border-color: #34c759;
+  color: #1a1a1a;
+  background-color: #34c759;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 /*# sourceMappingURL=style.css.map */
