@@ -1,0 +1,35 @@
+.work-cards
+    display: flex
+    justify-content: space-between
+    margin: 60px auto 30px auto
+
+.work-card
+    padding: 25px
+    width: 255px
+    height: 200px
+    border-radius: 6px
+    text-align: left
+    background-color: $dark-gray
+    &-title
+        +medium
+        font-size: 22px
+        line-height: 27px
+        letter-spacing: -0.275px
+    &-description
+        font-size: 14px
+        line-height: 18px
+        letter-spacing: -0.1625px
+        color: rgba($secondary, 0.5)
+.work-card:hover
+    background-color: $primary
+    color: $black
+    transition: 300ms
+.work-card:hover .work-card-description
+    color: $black
+    transition: 300ms
+
+.work-card hr
+    margin: 10px 0 25px 0
+.work-card:hover hr
+    background-color: $black
+    transition: 300ms
