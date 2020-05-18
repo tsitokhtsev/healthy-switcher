@@ -418,4 +418,58 @@ hr {
   -webkit-transition: 300ms;
   transition: 300ms;
 }
+
+.chefs-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chef {
+  margin: 60px auto 0 auto;
+  width: 350px;
+}
+
+.chef-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.chef-profile-info {
+  margin-left: 24px;
+  text-align: left;
+}
+
+.chef-profile-name {
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.225px;
+}
+
+.chef-profile-description {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.chef-meals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 /*# sourceMappingURL=style.css.map */
