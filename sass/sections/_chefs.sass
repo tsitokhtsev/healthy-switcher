@@ -1,0 +1,28 @@
+.chefs-cards
+    display: flex
+    justify-content: space-between
+
+.chef
+    margin: 60px auto 0 auto
+    width: 350px
+    &-profile
+        display: flex
+        align-items: center
+        margin-bottom: 24px
+        &-info
+            margin-left: 24px
+            text-align: left
+        &-name
+            +medium
+            font-size: 18px
+            line-height: 22px
+            letter-spacing: -0.225px
+        &-description
+            font-size: 12px
+            line-height: 16px
+            letter-spacing: -0.15px
+            color: rgba($secondary, 0.5)
+    &-meals
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
