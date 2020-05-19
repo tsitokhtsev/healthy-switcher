@@ -54,6 +54,7 @@ body {
   color: #ffffff;
   background: url(../img/background.png) no-repeat, #1a1a1a;
   border-radius: 6px;
+  cursor: default;
 }
 
 article {
@@ -194,6 +195,10 @@ hr {
   background-color: #34c759;
   border: none;
   border-radius: 43px;
+}
+
+.order-now:hover {
+  cursor: pointer;
 }
 
 .hero img {
@@ -417,6 +422,7 @@ hr {
   background-color: #34c759;
   -webkit-transition: 300ms;
   transition: 300ms;
+  cursor: pointer;
 }
 
 .chefs-cards {
