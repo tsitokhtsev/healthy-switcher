@@ -1,0 +1,114 @@
+.recipes
+    &-cards
+        display: flex
+        justify-content: space-between
+        margin: 60px auto 0 auto
+        &-block
+            display: flex
+            flex-wrap: wrap
+            align-content: space-between
+            max-width: 540px
+            height: 510px
+            &-small .recipes-card-bg
+                background: url(../img/recipes/recipe2.png) center
+                background-size: 100%
+    &-card
+        border-radius: 6px
+        &-text
+            margin: 0
+            +medium
+            text-align: left
+            font-size: 16px
+            line-height: 30px
+            &-big
+                +medium
+                font-size: 24px
+                line-height: 40px
+                text-align: center
+            &-small
+                margin-bottom: 10px
+        &-big
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding: 60px 90px
+            min-height: 510px
+            background: url(../img/recipes/recipe1.png) center 
+        &-small
+            padding: 30px 30px 25px 30px
+            text-align: left
+            background-color: $dark-gray
+            transition: 300ms ease
+            &:hover
+                background-color: $primary
+                color: $black
+                transition: 300ms
+                .recipes-card
+                    &-mealtime
+                        color: $secondary
+                    &-feedback
+                        color: $black
+                        &-img2
+                            z-index: 0
+                        &-count
+                            color: $black
+        &-bg
+            background-size: 100%
+            transition: 300ms ease
+            &:hover
+                color: $secondary
+                background-size: 110%
+                transition: 300ms
+                .recipes-card-feedback
+                    &-img2
+                        z-index: -1
+                    &-count
+                        color: $secondary
+        &-bg .recipes-card-mealtime
+                background: rgba($black, 0.5)
+        &-bottom
+            display: flex
+            justify-content: space-between
+            align-content: center
+        &-mealtime
+            display: inline
+            padding: 5px 10px
+            +black
+            font-size: 10px
+            font-stretch: condensed
+            line-height: 25px
+            letter-spacing: 1.25px  
+            text-transform: uppercase
+            border-radius: 4px
+            background-color: $black
+            transition: 300ms ease
+            &-big
+                margin: 0 auto
+                padding: 0 10px  
+        &-date
+            margin-left: 15px
+            +medium
+            font-size: 12px
+            line-height: 25px
+        &-description
+            font-size: 14px
+            line-height: 30px
+        &-feedback
+            display: flex
+            justify-content: space-between
+            align-items: stretch
+            align-self: center
+            width: 150px
+            &-link
+                position: relative
+            &-img
+                margin-right: 15px
+                vertical-align: top
+            &-img2
+                position: absolute
+                left: 0
+                z-index: -1
+                transition: 300ms ease
+            &-count
+                transition: 300ms ease
+    

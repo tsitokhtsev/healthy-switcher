@@ -89,6 +89,11 @@ hr {
   background-color: #34c759;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .navbar {
   z-index: 99;
   position: fixed;
@@ -96,9 +101,9 @@ hr {
   top: 0;
   width: 100%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(37, 37, 37, 0.8);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  background-color: rgba(37, 37, 37, 0.95);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .navbar-container {
@@ -134,8 +139,6 @@ hr {
 .nav-menu {
   font-family: "Helvetica Neue Cyr Bold", sans-serif;
   font-size: 14px;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .hero {
@@ -243,6 +246,8 @@ hr {
   padding: 22px;
   border: 2px solid #303030;
   border-radius: 99px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .about-scroller-btn-right img:hover, .about-scroller-btn-left img:hover {
@@ -274,6 +279,8 @@ hr {
   border-radius: 6px;
   text-align: left;
   background-color: #252525;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .work-card-title {
@@ -414,6 +421,8 @@ hr {
   letter-spacing: 0.2em;
   color: rgba(255, 255, 255, 0.5);
   background-color: #252525;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .dishes-card-bottom-order:hover {
@@ -477,5 +486,409 @@ hr {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.recipes-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px auto 0 auto;
+}
+
+.recipes-cards-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  max-width: 540px;
+  height: 510px;
+}
+
+.recipes-cards-block-small .recipes-card-bg {
+  background: url(../img/recipes/recipe2.png) center;
+  background-size: 100%;
+}
+
+.recipes-card {
+  border-radius: 6px;
+}
+
+.recipes-card-text {
+  margin: 0;
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  text-align: left;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.recipes-card-text-big {
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.recipes-card-text-small {
+  margin-bottom: 10px;
+}
+
+.recipes-card-big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 90px;
+  min-height: 510px;
+  background: url(../img/recipes/recipe1.png) center;
+}
+
+.recipes-card-small {
+  padding: 30px 30px 25px 30px;
+  text-align: left;
+  background-color: #252525;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.recipes-card-small:hover {
+  background-color: #34c759;
+  color: #1a1a1a;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.recipes-card-small:hover .recipes-card-mealtime {
+  color: #ffffff;
+}
+
+.recipes-card-small:hover .recipes-card-feedback {
+  color: #1a1a1a;
+}
+
+.recipes-card-small:hover .recipes-card-feedback-img2 {
+  z-index: 0;
+}
+
+.recipes-card-small:hover .recipes-card-feedback-count {
+  color: #1a1a1a;
+}
+
+.recipes-card-bg {
+  background-size: 100%;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.recipes-card-bg:hover {
+  color: #ffffff;
+  background-size: 110%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.recipes-card-bg:hover .recipes-card-feedback-img2 {
+  z-index: -1;
+}
+
+.recipes-card-bg:hover .recipes-card-feedback-count {
+  color: #ffffff;
+}
+
+.recipes-card-bg .recipes-card-mealtime {
+  background: rgba(26, 26, 26, 0.5);
+}
+
+.recipes-card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.recipes-card-mealtime {
+  display: inline;
+  padding: 5px 10px;
+  font-family: "Helvetica Neue Cyr CondensedBlack", sans-serif;
+  font-size: 10px;
+  font-stretch: condensed;
+  line-height: 25px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.recipes-card-mealtime-big {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.recipes-card-date {
+  margin-left: 15px;
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.recipes-card-description {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.recipes-card-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 150px;
+}
+
+.recipes-card-feedback-link {
+  position: relative;
+}
+
+.recipes-card-feedback-img {
+  margin-right: 15px;
+  vertical-align: top;
+}
+
+.recipes-card-feedback-img2 {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.recipes-card-feedback-count {
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.recipes-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px auto 0 auto;
+}
+
+.recipes-cards-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  max-width: 540px;
+  height: 510px;
+}
+
+.recipes-cards-block-small .recipes-card-bg {
+  background: url(../img/recipes/recipe2.png) center;
+  background-size: 100%;
+}
+
+.recipes-card {
+  border-radius: 6px;
+}
+
+.recipes-card-text {
+  margin: 0;
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  text-align: left;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.recipes-card-text-big {
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.recipes-card-text-small {
+  margin-bottom: 10px;
+}
+
+.recipes-card-big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 90px;
+  min-height: 510px;
+  background: url(../img/recipes/recipe1.png) center;
+}
+
+.recipes-card-small {
+  padding: 30px 30px 25px 30px;
+  text-align: left;
+  background-color: #252525;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.recipes-card-small:hover {
+  background-color: #34c759;
+  color: #1a1a1a;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.recipes-card-small:hover .recipes-card-mealtime {
+  color: #ffffff;
+}
+
+.recipes-card-small:hover .recipes-card-feedback {
+  color: #1a1a1a;
+}
+
+.recipes-card-small:hover .recipes-card-feedback-img2 {
+  z-index: 0;
+}
+
+.recipes-card-small:hover .recipes-card-feedback-count {
+  color: #1a1a1a;
+}
+
+.recipes-card-bg {
+  background-size: 100%;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.recipes-card-bg:hover {
+  color: #ffffff;
+  background-size: 110%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.recipes-card-bg:hover .recipes-card-feedback-img2 {
+  z-index: -1;
+}
+
+.recipes-card-bg:hover .recipes-card-feedback-count {
+  color: #ffffff;
+}
+
+.recipes-card-bg .recipes-card-mealtime {
+  background: rgba(26, 26, 26, 0.5);
+}
+
+.recipes-card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.recipes-card-mealtime {
+  display: inline;
+  padding: 5px 10px;
+  font-family: "Helvetica Neue Cyr CondensedBlack", sans-serif;
+  font-size: 10px;
+  font-stretch: condensed;
+  line-height: 25px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.recipes-card-mealtime-big {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.recipes-card-date {
+  margin-left: 15px;
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.recipes-card-description {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.recipes-card-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 150px;
+}
+
+.recipes-card-feedback-link {
+  position: relative;
+}
+
+.recipes-card-feedback-img {
+  margin-right: 15px;
+  vertical-align: top;
+}
+
+.recipes-card-feedback-img2 {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.recipes-card-feedback-count {
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 /*# sourceMappingURL=style.css.map */
