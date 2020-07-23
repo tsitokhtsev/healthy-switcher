@@ -46,24 +46,39 @@
                 .recipes-card
                     &-mealtime
                         color: $secondary
+                        transition: 300ms
+                    &-date
+                        color: $black
+                        transition: 300ms
                     &-feedback
                         color: $black
+                        transition: 300ms
                         &-img2
                             z-index: 0
+                            transition: 300ms
                         &-count
                             color: $black
+                            transition: 300ms
         &-bg
             background-size: 100%
             transition: 300ms ease
+            & .recipes-card-date
+                color: $secondary
             &:hover
                 color: $secondary
                 background-size: 110%
                 transition: 300ms
-                .recipes-card-feedback
-                    &-img2
-                        z-index: -1
-                    &-count
+                .recipes-card
+                    &-date
                         color: $secondary
+                        transition: 300ms
+                    &-feedback
+                        &-img2
+                            z-index: -1
+                            transition: 300ms
+                        &-count
+                            color: $secondary
+                            transition: 300ms
         &-bg .recipes-card-mealtime
                 background: rgba($black, 0.5)
         &-bottom
@@ -90,6 +105,8 @@
             +medium
             font-size: 12px
             line-height: 25px
+            color: $light-gray
+            transition: 300ms ease
         &-description
             font-size: 14px
             line-height: 30px
