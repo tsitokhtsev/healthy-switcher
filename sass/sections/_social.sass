@@ -1,0 +1,65 @@
+.social
+    margin-bottom: 120px
+    &-cards
+        display: flex
+        justify-content: space-between
+        margin: 60px auto 0 auto
+    &-card
+        width: 350px
+        height: 330px
+        border-radius: 6px
+        background-color: $dark-gray
+        &-section
+            display: block
+            padding: 22.5px 30px
+            text-align: left
+            overflow: auto
+            &:first-child
+                border-bottom: 2px solid $gray
+            &-ig
+                background: url(../img/social/content.png) no-repeat 100%
+                padding-bottom: 61.50%
+        &-top
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-social
+            display: flex
+            align-items: center
+            &-title
+                +medium
+                font-size: 14px
+                line-height: 30px
+                color: $light-gray
+            &-logo
+                margin-right: 20px
+                padding: 5px
+                border: 2px solid $gray
+                border-radius: 99px
+            &-follow
+                align-self: flex-end
+                padding: 0 20px 0 20px
+                border: 2px solid $gray
+                border-radius: 30px
+                +black
+                font-size: 10px
+                line-height: 40px
+                letter-spacing: 0.2em
+                text-transform: uppercase
+                color: rgba($secondary, 0.5)
+                background-color: $dark-gray
+                transition: 300ms ease
+                &:hover
+                    border-color: $primary
+                    color: $black
+                    background-color: $primary
+                    transition: 300ms
+                    cursor: pointer
+        &-text
+            +medium
+            font-size: 14px
+            line-height: 30px
+            &-date
+                color: rgba($secondary, 0.5)
+            &-author
+                color: $primary
